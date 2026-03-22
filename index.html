@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneySaving App</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="Images/money-saving.favicon-32x32.png" rel="icon">
+</head>
+
+<body>
+    <div id="money-saving-wrapper">
+        <h1>Money Saving App</h1>
+        <p>Plan and track your savings based on your income and lifestyle.</p>
+        <br>
+        <h3>Calculate your recommended savings based on your income and age group.</h3>
+            <hr>
+    <form>
+    <div>
+        <p>Your Name:</p>
+        <input name="username" type="text" required 
+        placeholder="Please enter your Username">
+    </div>
+
+    <div>
+        <p>Monthly Income (€):</p>
+        <input type="number" min="0" name="income" required 
+        placeholder="Please enter your Income">
+    </div>
+
+    <div>
+        <p>Age Group:</p>
+    <select name="ageLevel" required>
+        <option value="">Select age level</option>
+        <option value="teenager">Teenager</option>
+        <option value="young adult">Young Adult</option>
+        <option value="middle-aged adult">Middle-aged Adult</option>
+        <option value="older adult">Older Adult</option>
+    </select>
+
+    <div id="ageLevelFeedback"></div>
+    </div>
+
+    <button type="button" id="submitButton">Submit</button>
+    </form>
+
+    <hr>
+    <div id="results">
+        <h2>Results</h2>
+        <p>Your recommended savings:</p>
+        <div id="savings"></div>
+    </div>
+
+    </div>
+
+
+
+
+   <script src="script.js"></script>
+</body>
+</html>
